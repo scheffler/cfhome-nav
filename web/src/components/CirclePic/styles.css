@@ -1,0 +1,32 @@
+﻿.myimg{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  border-radius: 50%;
+  border: #56C4C4 4px solid;
+
+  color: #56C4C4;
+  mix-blend-mode: hard-light;
+}
+
+.pics {
+  display:flex;
+  justify-content:space-around;
+  /*flex-direction:row;*/
+  /*align-items:flex-start;*/
+}
+
+
+.picframe {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  height:300px;
+}
+
+
+.img-selected {
+  background: #56C4C4;
+  mix-blend-mode: hard-light;
+}

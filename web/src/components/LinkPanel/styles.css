@@ -1,0 +1,40 @@
+﻿.panel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top:30px;
+  border: solid 1px #4d4d4f;
+}
+
+.growth-header {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 16px;
+}
+
+.button-list {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  width:100%;
+}
+
+.inner-item {
+  font-weight: 900;
+  width:275px;
+  height:140px;
+  margin:0;
+  padding: 20px 20px;
+  font-size:20px;
+  line-height: 24px;
+  color:#878787;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

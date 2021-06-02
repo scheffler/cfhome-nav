@@ -1,0 +1,39 @@
+body {
+  font-family: "Lato", Arial, serif;
+}
+
+.carousel {
+  max-width:1200px;
+}
+
+.btn {
+  width:180px;
+  height:3em;
+  font-size:15px;
+  font-weight:900;
+  border-radius:15px;
+  border: solid 2px #56c4c4;
+  background-color: white;
+  color: #56c4c4;
+  cursor:pointer;
+}
+
+.btn-selected {
+  color:white;
+  background-color: #56c4c4;
+}
+
+.btn-link {
+  width:180px;
+  border-radius:15px;
+  line-height: 18px;
+  font-size:15px;
+  font-weight: 900;
+  background-color: #00aeef;
+  color:white;
+  border: 2px solid #56c4c4;
+  height:40px;
+  cursor:pointer;
+}
+
+
