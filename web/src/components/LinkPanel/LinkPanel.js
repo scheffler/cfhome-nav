@@ -1,6 +1,7 @@
 import styles from './styles.css'
 
 const LinkPanel = () => {
+
   return (
     <div className={'panel'}>
       <div className={'growth-header'}>How would you like to grow relationally?</div>
@@ -23,6 +24,5 @@ const ButtonGroup = (props) => {
     </div>
   )
 }
-
 
 export default LinkPanel
