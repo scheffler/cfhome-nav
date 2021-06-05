@@ -3,8 +3,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top:30px;
-  border: solid 1px #4d4d4f;
+  margin-top:80px;
+}
+
+.growth-section {
+  padding: 56px 30px 8px;
 }
 
 .growth-header {
@@ -14,6 +17,19 @@
   letter-spacing: 1px;
   color: #4d4d4f;
   margin-bottom: 16px;
+}
+
+.growth-info {
+  font-size:16px;
+  line-height:26px;
+  color: #4A4A4A;
+  margin: 0;
+}
+
+.growth-header-container {
+  max-width:600px;
+  margin:0 auto 40px;
+  text-align: center;
 }
 
 .button-list {
