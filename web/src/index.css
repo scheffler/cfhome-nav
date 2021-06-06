@@ -34,6 +34,10 @@ body {
   border: 2px solid #56c4c4;
   height:40px;
   cursor:pointer;
+  text-decoration-line: none;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
