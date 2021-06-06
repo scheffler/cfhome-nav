@@ -19,7 +19,7 @@
             buttonLink: '#celebrateRecovery'
           },
           {
-            title: 'Server Alongside Others',
+            title: 'Serve Alongside Others',
             buttonText: 'View Ministries',
             buttonLink: '#viewMinistries'
           },
@@ -54,7 +54,7 @@
         links: []
       }
     }
-  ]
+ ]
 }
 
 export default navModel;

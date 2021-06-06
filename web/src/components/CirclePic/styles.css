@@ -3,8 +3,8 @@
   height:200px;
   object-fit:cover;
   border-radius: 50%;
-  border: #56C4C4 4px solid;
-  color: #56C4C4;
+  border: #F15D22 4px solid;
+  color: #F15D22;
   cursor: pointer;
 }
 
@@ -15,8 +15,6 @@
 .growth-choices-container {
   display:flex;
   justify-content:space-around;
-  /*flex-direction:row;*/
-  /*align-items:flex-start;*/
 }
 
 

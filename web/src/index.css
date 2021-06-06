@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", serif
+  font-family: "proxima-nova", serif
 }
 
 .carousel {
@@ -11,27 +11,27 @@ body {
   height:3em;
   font-size:15px;
   font-weight:900;
-  border-radius:15px;
-  border: solid 2px #56c4c4;
-  background-color: white;
-  color: #56c4c4;
+  border-radius:3px;
+  border: solid 2px #F15D22;
+  background-color: #F15D22;
+  color: white;
   cursor:pointer;
 }
 
 .btn-selected {
-  color:white;
-  background-color: #56c4c4;
+  color:#F15D22;
+  background-color: white;
 }
 
 .btn-link {
   width:180px;
-  border-radius:15px;
+  border-radius:3px;
   line-height: 18px;
   font-size:15px;
   font-weight: 900;
-  background-color: #00aeef;
+  background-color: #F15D22;
   color:white;
-  border: 2px solid #56c4c4;
+  border: 2px solid #F15D22;
   height:40px;
   cursor:pointer;
   text-decoration-line: none;
