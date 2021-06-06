@@ -4,9 +4,11 @@
   object-fit:cover;
   border-radius: 50%;
   border: #56C4C4 4px solid;
-
   color: #56C4C4;
-  /*mix-blend-mode: hard-light;*/
+}
+
+.myimg .img-selected {
+  mix-blend-mode: hard-light;
 }
 
 .growth-choices-container {

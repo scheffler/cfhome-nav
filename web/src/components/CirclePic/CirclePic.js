@@ -1,13 +1,15 @@
 import styles from './styles.css';
 
-const CirclePic = (props) => {
+const CirclePic = ({image,text,selected,select}) => {
 
-  const selclass = (props.selected === props.buttonText) ? 'btn-selected' : '';
+  const isSelected = selected === text
+  const selclass = isSelected ? 'btn-selected' : '';
+  const selImg = isSelected ? 'img-selected' : '';
 
   return (
     <div className={'picframe'}>
-      <img className={'myimg'} src={props.img} alt={'photo'}/>
-      <button className={`btn ${selclass}`} onClick={ () => props.select(props.buttonText)} >{props.buttonText}</button>
+      <img className={`myimg ${selImg}`} src={image} alt={'photo'}/>
+      <button className={`btn ${selclass}`} onClick={ () => select(text)} >{text}</button>
     </div>
   )
 }
