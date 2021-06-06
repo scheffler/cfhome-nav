@@ -5,6 +5,7 @@ const LinkPanel = ({title,links}) => {
 
   return (
     <div className={'panel'}>
+      <img src={'/images/divider.svg'} />
       <div className={'growth-header'}>{title}</div>
       <div className={'button-list'}>
         {
