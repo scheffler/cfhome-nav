@@ -14,7 +14,7 @@
             buttonLink: 'https://www.google.com'
           },
           {
-            title: 'Work Through some Hurts, Habits, or Hangups',
+            title: 'Work Through some Habits, or Hangups',
             buttonText: 'Celebrate Recovery',
             buttonLink: '#celebrateRecovery'
           },

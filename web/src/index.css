@@ -1,9 +1,9 @@
 body {
-  font-family: "Lato", Arial, serif;
+  font-family: "Open Sans", serif
 }
 
 .carousel {
-  background-color: #f6f6f6;
+  background-color: #e3e3e3;
 }
 
 .btn {
@@ -38,6 +38,23 @@ body {
   display:flex;
   flex-direction: column;
   justify-content: center;
+  min-height:44px;
 }
 
+.logo {
+  width:296px;
+  object-fit: contain;
+}
 
+.header {
+  width: 1080px;
+  height: 84px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-wrapper {
+  display:flex;
+  justify-content: center;
+}

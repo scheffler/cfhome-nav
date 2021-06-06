@@ -33,7 +33,16 @@ const HomePage = () => {
 
   return (
     <>
-      <h1>Multi level selection navigation</h1>
+      <div className={'header-wrapper'}>
+        <div className={'header'}>
+          <div style={{width:296}}>
+            <img className={'logo'} src={'/images/cf-logo.png'} alt={'logo'}/>
+          </div>
+          <div style={{width:700}}>
+            &nbsp;
+          </div>
+        </div>
+      </div>
       <div className={'carousel'}>
         <section className={'growth-section'}>
           <div className={'growth-header-container'}>
