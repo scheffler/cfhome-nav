@@ -1,12 +1,12 @@
 ﻿const navModel = {
-  title: 'How would you like to grow?',
-  subTitle: 'Select an area below you would like to grow in. We have plenty of resources that will help you become healthier, and assist you in your journey of growing more like Jesus.',
+  title: 'Where are you along your faith journey?',
+  subTitle: 'Select a starting point below. Each pathway features resources we offer to support and guide you along your journey to be more like Christ.',
   imageLinks: [
     {
-      text: 'Relational Health',
-      image: '/images/pexels-matteo-badini-4064432.jpg',
+      text: 'Exploring',
+      image: '/images/exploring.jpg',
       subPanel: {
-        title: 'How would you like to grow relationally?',
+        title: 'Where would you like to focus?',
         links: [
           {
             title: 'Build Christian Friendships',
@@ -32,8 +32,8 @@
       }
     },
     {
-      text: 'Spiritual Health',
-      image: '/images/pexels-aleksey-kuprikov-3493777.jpg',
+      text: 'Growing',
+      image: '/images/growing.jpg',
       subPanel: {
         title: 'How would you like to grow spiritually?',
         links: [
@@ -47,8 +47,16 @@
       }
     },
     {
-      text: 'Physical Health',
-      image: '/images/pexels-paul-ijsendoorn-33041.jpg',
+      text: 'Restoring',
+      image: '/images/restoring.jpg',
+      subPanel: {
+        title: 'How would you like to grow physically?',
+        links: []
+      }
+    },
+    {
+      text: 'Maturing',
+      image: '/images/maturing.jpg',
       subPanel: {
         title: 'How would you like to grow physically?',
         links: []
