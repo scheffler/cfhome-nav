@@ -1,11 +1,19 @@
-import styles from './styles.css'
+
+/**
+ * Bottom-most panel of selectable buttons which navigate you to another page/resource
+ *
+ * @param title
+ * @param choices
+ * @returns {JSX.Element}
+ * @constructor
+ */
+
 
 const LinkPanel = ({title,links}) => {
   links = links || [];
 
   return (
     <div className={'panel'}>
-      <img src={'/images/divider.svg'} />
       <div className={'growth-header'}>{title}</div>
       <div className={'button-list'}>
         {

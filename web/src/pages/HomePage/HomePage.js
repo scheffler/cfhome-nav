@@ -1,7 +1,7 @@
-import CirclePic from 'src/components/CirclePic/CirclePic'
-import LinkPanel from 'src/components/LinkPanel/LinkPanel'
-import React, {useState} from 'react'
-import {useTransition, animated, config} from 'react-spring'
+import CirclePic from 'src/components/CirclePic/CirclePic';
+import ChoicePanel from 'src/components/ChoicePanel/ChoicePanel';
+import React, {useState} from 'react';
+import {useTransition, animated, config} from 'react-spring';
 import navModel from 'src/navData';
 
 // center the fixed width blocks horizontally on the page
@@ -9,26 +9,37 @@ import navModel from 'src/navData';
 // pull header from cfhome.org
 
 const HomePage = () => {
-  const [selected, setSelected] = useState({});
-  const [show, set] = useState(false);
+  const [selectedCircle, setSelectedCircle] = useState({});
+  const [selectedChoice, setSelectedChoice] = useState({});
+  const [showChoices, setShowChoicePanel] = useState(false);
 
-  const transitions = useTransition(show, {
+  // shouldn't need this if selectedChoice state is used properly
+  const [showLinkPanel, setShowLinkPanel] = useState(false);
+
+  const choiceTransitions = useTransition(showChoices, {
     from: { opacity: 0, height: '0%' },
     enter: { opacity: 1, height: '100%'},
     leave: { opacity: 0, height: '0%' },
-    reverse: show,
+    reverse: showChoices,
     delay: 200,
     config: config.slow
   })
 
-  const optSelect = (val)=> {
+  const circleSelect = (val)=> {
     var match = navModel.imageLinks.find((ele)=> {
       return ele.text === val;
     });
 
-    let expanded = !show || match.text !== selected.text;
-    setSelected( (match.text === selected.text) ? {} : match);
-    set(expanded);
+    let expanded = !showChoices || match.text !== selectedCircle.text;
+    setSelectedCircle( (match.text === selectedCircle.text) ? {} : match);
+    setShowChoicePanel(expanded);
+    setSelectedChoice({});
+    setShowLinkPanel(false);
+  }
+
+  const choiceSelect = (val)=> {
+    setSelectedChoice(val);
+    setShowLinkPanel(true);
   }
 
   return (
@@ -54,15 +65,20 @@ const HomePage = () => {
           <div className={'growth-choices-container'}>
             {
               navModel.imageLinks.map((link, idx)=> {
-                return <CirclePic key={idx} {...link} selected={selected} select={optSelect} />
+                return <CirclePic key={idx} {...link} selected={selectedCircle} select={circleSelect} />
               })
             }
           </div>
           {
-            transitions(
+            choiceTransitions(
               (styles, item) =>
                 item && <animated.div style={styles}>
-                  <LinkPanel {...selected.subPanel}/>
+                  <ChoicePanel {...selectedCircle.choicePanel}
+                               select={choiceSelect}
+                               selected={selectedChoice}
+                               showLinkPanel={showLinkPanel}
+
+                  />
               </animated.div>
             )
           }

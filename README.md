@@ -4,11 +4,26 @@
 
 Selectable animated nav controls to describing learning paths/choices. Based on approach from https://saddleback.com/learn
 
+
+## Punch list
+
+* Keep track of choice selection in state
+* Use separate transition to control the show/hide of the link panel
+* Update path for controlling navData.js via a JSON file
+* Mobile layout?
+  * how does saddleback present this?
+
+
 ## Repo / publish
 
 https://github.com/scheffler/cfhome-nav
 
 Published out to netlify - https://cfhome-nav-sample.netlify.app/
+
+
+## Notes
+
+* Nav options are controlled by `src\navData.js`
 
 
 ### Dev setup
@@ -27,12 +42,17 @@ yarn redwood dev
 
 Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.
 
-### Add dependencies to a workspace
+### Commands
+
+Add new npm style dependency to the workspace side
 
 ```terminal
 yarn workspace web add <libraryname>
 ```
 
+deploy
+
+yarn rw generate component <name>
 
 
 
