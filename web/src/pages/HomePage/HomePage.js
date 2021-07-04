@@ -38,7 +38,11 @@ const HomePage = () => {
   }
 
   const choiceSelect = (val)=> {
-    setSelectedChoice(val);
+    var match = selectedCircle.choicePanel.choices.find((ele)=> {
+      return ele.buttonText === val;
+    })
+
+    setSelectedChoice(match);
     setShowLinkPanel(true);
   }
 

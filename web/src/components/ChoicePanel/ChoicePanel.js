@@ -1,5 +1,6 @@
 import styles from './styles.css';
 import LinkPanel from 'src/components/LinkPanel/LinkPanel';
+import {Link} from "@redwoodjs/router";
 
 /**
  * Intermediate selectable buttons as you walk down the choice path. Making a choice resolves to a LinkPanel
@@ -9,6 +10,7 @@ import LinkPanel from 'src/components/LinkPanel/LinkPanel';
  */
 const ChoicePanel = ({title,choices,select, selected, showLinkPanel}) => {
   choices = choices || [];
+  const linkPanel = selected.linkPanel || {title: '', links:[]};
 
   return (
     <>
@@ -18,22 +20,12 @@ const ChoicePanel = ({title,choices,select, selected, showLinkPanel}) => {
         <div className={'button-list'}>
           {
             choices.map((ele, idx)=> {
-              return <ChoiceButton key={idx} {...ele} select={select} selected={selected} />
+              return <ChoiceButton key={idx} {...ele} select={select} selected={selected.buttonText} />
             })
           }
         </div>
       </div>
-      <div className={'panel'}>
-        <img alt={'divider line'} src={'/images/divider.svg'} />
-        <div className={'growth-header'}>{title}</div>
-        <div className={'button-list'}>
-          {
-            choices.map((ele, idx)=> {
-              return <ChoiceButton key={idx} {...ele} select={select} selected={selected} />
-            })
-          }
-        </div>
-      </div>
+      <LinkPanel title={linkPanel.title} links={linkPanel.links} />
     </>
   )
 };
