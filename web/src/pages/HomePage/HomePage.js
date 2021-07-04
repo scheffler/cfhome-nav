@@ -8,6 +8,9 @@ import navModel from 'src/navData';
 // use styling from cfhome.org
 // pull header from cfhome.org
 
+
+
+
 const HomePage = () => {
   const [selectedCircle, setSelectedCircle] = useState({});
   const [selectedChoice, setSelectedChoice] = useState({});
@@ -61,7 +64,7 @@ const HomePage = () => {
       <div className={'carousel'}>
         <section className={'growth-section'}>
           <div className={'growth-header-container'}>
-            <p className={'growth-header'}>
+            <p className={'header-text'}>
               {navModel.title}
             </p>
             <p className={'growth-info'}>{navModel.subTitle}</p>
@@ -78,6 +81,7 @@ const HomePage = () => {
               (styles, item) =>
                 item && <animated.div style={styles}>
                   <ChoicePanel {...selectedCircle.choicePanel}
+                               persona={selectedCircle.persona}
                                select={choiceSelect}
                                selected={selectedChoice}
                                showLinkPanel={showLinkPanel}

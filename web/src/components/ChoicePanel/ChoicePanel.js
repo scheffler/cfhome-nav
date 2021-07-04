@@ -8,16 +8,16 @@ import {Link} from "@redwoodjs/router";
  * @returns {JSX.Element}
  * @constructor
  */
-const ChoicePanel = ({title,choices,select, selected, showLinkPanel}) => {
+const ChoicePanel = ({title,choices,select, selected, persona, showLinkPanel}) => {
   choices = choices || [];
   const linkPanel = selected.linkPanel || {title: '', links:[]};
 
   return (
     <>
-      <div className={'panel'}>
-        <img alt={'divider line'} src={'/images/divider.svg'} />
-        <div className={'growth-header'}>{title}</div>
+      <div className={'panel flex-panel choice-panel'}>
+        <div className={'header-text'}>{title}</div>
         <div className={'button-list'}>
+          <Persona {...persona} />
           {
             choices.map((ele, idx)=> {
               return <ChoiceButton key={idx} {...ele} select={select} selected={selected.buttonText} />
@@ -30,8 +30,7 @@ const ChoicePanel = ({title,choices,select, selected, showLinkPanel}) => {
   )
 };
 
-const ChoiceButton = ({buttonText, select, selected, children}) => {
-
+const ChoiceButton = ({buttonText, select, selected}) => {
   const selClass = (selected === buttonText) ? 'btn-selected' : '';
 
   return (
@@ -40,5 +39,18 @@ const ChoiceButton = ({buttonText, select, selected, children}) => {
     </div>
   )
 };
+
+const Persona = ({name, picture, title, description})=> {
+
+  return (
+    <div>
+      <div>{picture}</div>
+      <div>{name}</div>
+      <div>{title}</div>
+      <div>{description}</div>
+    </div>
+  );
+
+}
 
 export default ChoicePanel

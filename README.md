@@ -7,6 +7,8 @@ Selectable animated nav controls to describing learning paths/choices. Based on 
 
 ## Punch list
 
+* bring persona block up a level. it needs to be alongside the ChoicePanel and LinksPanel
+* use alternating panel background colors to highlight the sections rather than the down arrow graphic
 * Keep track of choice selection in state
 * Use separate transition to control the show/hide of the link panel
 * Update path for controlling navData.js via a JSON file

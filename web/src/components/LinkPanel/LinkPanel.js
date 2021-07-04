@@ -13,8 +13,8 @@ const LinkPanel = ({title,links}) => {
   links = links || [];
 
   return (
-    <div className={'panel'}>
-      <div className={'growth-header'}>{title}</div>
+    <div className={'flex-panel'}>
+      <div className={'links-header'}>{title}</div>
       <div className={'button-list'}>
         {
           links.map((ele, idx)=> {
@@ -26,11 +26,10 @@ const LinkPanel = ({title,links}) => {
   )
 }
 
-const ButtonGroup = ({buttonText, title, buttonLink}) => {
+const ButtonGroup = ({buttonText, buttonLink}) => {
 
   return (
     <div className={'inner-item'}>
-      <p>{title}</p>
       <a className={'btn-link'} href={buttonLink} >{buttonText}</a>
     </div>
   )

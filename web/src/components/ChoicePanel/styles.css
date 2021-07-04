@@ -1,23 +1,31 @@
 ﻿.panel {
+  margin-top:80px;
+}
+
+.choice-panel {
+  background-color: white;
+}
+
+.flex-panel {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top:80px;
+
 }
 
 .growth-section {
-  padding: 56px 30px 8px;
+  padding: 56px 0px 8px;
 }
 
-.growth-header {
+
+.links-header {
   font-weight: 900;
   font-size: 28px;
   line-height: 35px;
   letter-spacing: 1px;
-  color: #4d4d4f;
-  margin-bottom: 16px;
-  margin-top:24px;
+  color: #434B6D;
+
 }
 
 .growth-info {

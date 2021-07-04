@@ -5,6 +5,12 @@
     {
       text: 'Exploring',
       image: '/images/exploring.jpg',
+      persona: {
+        name: 'Tim',
+        picture: '/images/exploring.jpg',
+        title: 'Where are the next steps in my relationship with God?',
+        description:'Jennifer has been attending worship services a few times a month now, but she wants something more. She is looking for authentic community where she can grow alongside other believers. She met a few people when she volunteered during server Day, but is hoping to build deeper connections within her church family. Jennifer is also excited to learn more about God and his Word with others. If she understands the Bible more, she can feel more confident having meaningful conversations about her faith with others.'
+      },
       choicePanel: {
         title: 'Where would you like to focus?',
         choices: [
@@ -98,6 +104,12 @@
     {
       text: 'Growing',
       image: '/images/growing.jpg',
+      persona: {
+        name: 'Jennifer',
+        picture: '/images/exploring.jpg',
+        title: 'Where are the next steps in my relationship with God?',
+        description:'Jennifer has been attending worship services a few times a month now, but she wants something more. She is looking for authentic community where she can grow alongside other believers. She met a few people when she volunteered during server Day, but is hoping to build deeper connections within her church family. Jennifer is also excited to learn more about God and his Word with others. If she understands the Bible more, she can feel more confident having meaningful conversations about her faith with others.'
+      },
       choicePanel: {
         title: 'How would you like to grow spiritually?',
         links: [
@@ -112,6 +124,12 @@
     {
       text: 'Restoring',
       image: '/images/restoring.jpg',
+      persona: {
+        name: 'Eric',
+        picture: '/images/exploring.jpg',
+        title: 'Where are the next steps in my relationship with God?',
+        description:'Jennifer has been attending worship services a few times a month now, but she wants something more. She is looking for authentic community where she can grow alongside other believers. She met a few people when she volunteered during server Day, but is hoping to build deeper connections within her church family. Jennifer is also excited to learn more about God and his Word with others. If she understands the Bible more, she can feel more confident having meaningful conversations about her faith with others.'
+      },
       choicePanel: {
         links: []
       }
@@ -119,6 +137,12 @@
     {
       text: 'Maturing',
       image: '/images/maturing.jpg',
+      persona: {
+        name: 'Will',
+        picture: '/images/exploring.jpg',
+        title: 'Where are the next steps in my relationship with God?',
+        description:'Jennifer has been attending worship services a few times a month now, but she wants something more. She is looking for authentic community where she can grow alongside other believers. She met a few people when she volunteered during server Day, but is hoping to build deeper connections within her church family. Jennifer is also excited to learn more about God and his Word with others. If she understands the Bible more, she can feel more confident having meaningful conversations about her faith with others.'
+      },
       choicePanel: {
         links: []
       }
