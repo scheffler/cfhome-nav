@@ -85,8 +85,16 @@ body {
 }
 
 .choice-header {
-  margin-bottom: 50px;
 }
+
+.choice-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
 
 .header-text-circle {
   color: white;

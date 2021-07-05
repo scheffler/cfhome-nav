@@ -14,6 +14,7 @@ const ChoicePanel = ({title,choices,select, selected, persona, showLinkPanel}) =
           <div className={'choice-detail'}>
             <div>
               <div className={'header-text choice-header'}>{title}</div>
+              <div className={'choice-subtitle'}>Select one of the Four Practices to find resources</div>
               <div className={'choice-button-list'}>
                 {
                   choices.map((ele, idx)=> {
