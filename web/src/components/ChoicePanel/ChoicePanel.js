@@ -1,5 +1,6 @@
 import styles from './styles.css';
 import LinkPanel from 'src/components/LinkPanel/LinkPanel';
+import Persona from 'src/components/Persona/Persona';
 import {Link} from "@redwoodjs/router";
 
 /**
@@ -40,17 +41,5 @@ const ChoiceButton = ({buttonText, select, selected}) => {
   )
 };
 
-const Persona = ({name, picture, title, description})=> {
-
-  return (
-    <div>
-      <div>{picture}</div>
-      <div>{name}</div>
-      <div>{title}</div>
-      <div>{description}</div>
-    </div>
-  );
-
-}
 
 export default ChoicePanel

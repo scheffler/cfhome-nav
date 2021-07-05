@@ -1,4 +1,4 @@
-import styles from './styles.css';
+
 
 const CirclePic = ({image,text,selected,select}) => {
 
@@ -8,7 +8,7 @@ const CirclePic = ({image,text,selected,select}) => {
 
   return (
     <div className={'picframe'} onClick={ () => select(text)} >
-      <img className={`myimg ${selImg}`} src={image} alt={'photo'} />
+      <img className={`circle-img circle-large ${selImg}`} src={image} alt={'photo'} />
       <button className={`btn ${selclass}`}  >{text}</button>
     </div>
   )
