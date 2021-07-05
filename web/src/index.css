@@ -118,8 +118,9 @@ body {
 }
 
 .img-selected {
-  background: #434B6D;
-  mix-blend-mode: hard-light;
+  background: #F15d22;
+  /*mix-blend-mode: hard-light;*/
+  border-color: #F15d22;
 }
 
 .picframe {

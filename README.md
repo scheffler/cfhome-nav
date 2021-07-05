@@ -7,9 +7,11 @@ Selectable animated nav controls to describing learning paths/choices. Based on 
 
 ## Punch list
 
+* selected circle outline should be orange
+
+
 * deselecting a circle has a funny transition
 * top gray section expands slightly when first item is selected - should be constant size
-* selected circle outline should be orange
 * set width for the main panel, don't want to grow to the entire screen size
 * Update path for controlling navData.js via a JSON file
 * Mobile layout?
