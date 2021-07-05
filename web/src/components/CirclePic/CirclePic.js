@@ -9,7 +9,7 @@ const CirclePic = ({image,text,selected,select}) => {
   return (
     <div className={'picframe'} onClick={ () => select(text)} >
       <img className={`circle-img circle-large ${selImg}`} src={image} alt={'photo'} />
-      <button className={`btn ${selclass}`}  >{text}</button>
+      <button className={`btn btn-circle ${selclass}`}  >{text}</button>
     </div>
   )
 }

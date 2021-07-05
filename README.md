@@ -7,11 +7,10 @@ Selectable animated nav controls to describing learning paths/choices. Based on 
 
 ## Punch list
 
-* bring persona block up a level. it needs to be alongside the ChoicePanel and LinksPanel
+* deselecting a circle has a funny transition
+* top gray section expands slightly when first item is selected - should be constant size
+* selected circle outline should be orange
 * set width for the main panel, don't want to grow to the entire screen size
-* use alternating panel background colors to highlight the sections rather than the down arrow graphic
-* Keep track of choice selection in state
-* Use separate transition to control the show/hide of the link panel
 * Update path for controlling navData.js via a JSON file
 * Mobile layout?
   * how does saddleback present this?

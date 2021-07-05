@@ -64,7 +64,7 @@ const HomePage = () => {
       <div className={'carousel'}>
         <section className={'growth-section'}>
           <div className={'growth-header-container'}>
-            <p className={'header-text'}>
+            <p className={'header-text header-text-circle'}>
               {navModel.title}
             </p>
             <p className={'growth-info'}>{navModel.subTitle}</p>

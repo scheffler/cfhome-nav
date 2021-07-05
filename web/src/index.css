@@ -3,41 +3,57 @@ body {
 }
 
 .carousel {
-  background-color: #e3e3e3;
+  background-color: #232323;
 }
 
 .btn {
   width:180px;
   font-size:15px;
   font-weight:900;
-  border-radius:10px;
-  border: solid 2px #F15D22;
-  background-color: #F15D22;
+  border-radius:20px;
+  border: solid 2px #2C95B5;
+  background-color: #2C95B5;
   color: white;
   cursor:pointer;
 }
 
+.btn-choice {
+  color:white;
+  background-color: #2C95B5;
+  border: solid 2px #2C95B5;
+  height: 78px;
+  padding: 16px;
+
+}
+
+.btn-circle {
+  padding:8px;
+  width:120px;
+  font-size: 18px;
+}
+
 .btn-selected {
-  color:#F15D22;
-  background-color: white;
+  color:white;
+  background-color: #F15d22;
+  border: solid 2px #F15d22;
 }
 
 .btn-link {
   width:180px;
+  height: 78px;
+  padding:16px;
   border-radius:10px;
   line-height: 18px;
   font-size:15px;
   font-weight: 900;
-  background-color: #F15D22;
+  background-color: #2C95B5;
   color:white;
-  border: 2px solid #F15D22;
-  height:40px;
+  border: 2px solid #2C95B5;
   cursor:pointer;
   text-decoration-line: none;
   display:flex;
   flex-direction: column;
   justify-content: center;
-  min-height:44px;
 }
 
 .logo {
@@ -63,9 +79,17 @@ body {
   font-size: 28px;
   line-height: 35px;
   letter-spacing: 1px;
-  color: #4d4d4f;
   margin-bottom: 16px;
   margin-top:24px;
+  text-align: center;
+}
+
+.choice-header {
+  margin-bottom: 50px;
+}
+
+.header-text-circle {
+  color: white;
 }
 
 .circle-img{
@@ -77,15 +101,15 @@ body {
 .circle-large {
   width: 200px;
   height: 200px;
-  border: #434B6D 12px solid;
-  color: #434B6D;
+  border: #2C95B5 12px solid;
+  color: #2C95B5;
 }
 
 .circle-small {
   width: 100px;
   height: 100px;
-  border: #EE7D30 12px solid;
-  color: #EE7D30;
+  border: #F15d22 12px solid;
+  color: #F15d22;
 }
 
 .growth-choices-container {
@@ -109,8 +133,8 @@ body {
 .persona-panel {
   text-align: center;
   width:400px;
-  min-height:600px;
-  border: #EE7D30 solid 2px;
+  min-height:520px;
+  border: #F15d22 solid 2px;
   border-radius:20px;
   padding: 16px;
 }
@@ -123,6 +147,7 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .persona-title {
@@ -150,13 +175,17 @@ body {
   flex-direction: row;
   justify-content:space-around;
   width:100%;
+  margin-top:20px;
+}
 
+.choice-detail {
 }
 
 .choice-button-list {
   display:flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top:16px;
 }
 
 .link-button-list {
@@ -184,13 +213,15 @@ body {
   line-height: 35px;
   letter-spacing: 1px;
   color: #434B6D;
+  margin-bottom: 50px;
+  margin-top:24px;
 
 }
 
 .growth-info {
   font-size:16px;
   line-height:26px;
-  color: #4A4A4A;
+  color: white;
   margin: 0;
 }
 

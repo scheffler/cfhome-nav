@@ -9,9 +9,6 @@ const Persona = ({name,picture,title,description}) => {
       <div className={'persona-name'}>
         {name}
       </div>
-      <div className={'persona-title'}>
-        {title}
-      </div>
       <div className={'persona-description'}>
         {description}
       </div>

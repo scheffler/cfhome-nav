@@ -6,25 +6,25 @@
       text: 'Exploring',
       image: '/images/exploring.jpg',
       persona: {
-        name: 'Tim',
-        picture: '/images/exploring.jpg',
-        title: 'What does it look like to follow Jesus?',
-        description:'Tim is exploring faith in god and wants to better understand what believing in Jesus is all about. Tim is interested in connecting with a few trusted people who can answer some questions he has about the Bible. He wants some guidance as he learns about prayer, gets involved in serving, and considers giving to the church. He\'s curious what else is available to help him develop a relationship with God and determine the next steps in his faith journey.'
+        name: 'Are you like Tim?',
+        picture: '/images/tim.png',
+        title: '',
+        description:'Tim is exploring faith in God and wants to better understand what believing in Jesus is all about. Tim is interested in connecting with a few trusted people who can answer some questions he has about the Bible. He wants some guidance as he learns about prayer, gets involved in serving, and considers giving to the church. He\'s curious what else is available to help him develop a relationship with God and determine the next steps in his faith journey.'
       },
       choicePanel: {
-        title: 'Where would you like to focus?',
+        title: 'What does it look like to follow Jesus?',
         choices: [
           {
-            buttonText: 'I want to experience God in my life',
+            buttonText: 'Engage God Individually',
             linkPanel : {
-              title: 'Explore the practice of engaging God individually',
+              title: 'How can I experience more of God?',
               links: [
                 {
-                  buttonText: 'Begin your bible reading habit',
+                  buttonText: 'Begin your Bible reading habit',
                   buttonLink: '#'
                 },
                 {
-                  buttonText: 'Practice the "ACTS" prayer model',
+                  buttonText: 'Practice daily prayer',
                   buttonLink: '#'
                 },
                 {
@@ -32,16 +32,16 @@
                   buttonLink: '#'
                 },
                 {
-                  buttonText: 'Attend the Walk Thru the Bible seminars',
+                  buttonText: 'Learn more about the Bible',
                   buttonLink: '#'
                 }
               ]
             }
           },
           {
-            buttonText: 'I want to connect & explore with other Christ followers',
+            buttonText: 'Connect in a Group',
             linkPanel : {
-              title: 'Explore the practice of connecting in a group',
+              title: 'How can I explore with other Christ followers?',
               links: [
                 {
                   buttonText: 'Join a discovery group',
@@ -59,40 +59,40 @@
             }
           },
           {
-            buttonText: 'I want to make a personal impact on someone\'s life',
+            buttonText: 'Impact Others Personally',
             linkPanel : {
-              title: 'Explore the practice of impacting others personally',
+              title: 'How can I help other people?',
               links: [
                 {
-                  buttonText: 'Learn more about CF\'s vision of "The Table"',
+                  buttonText: 'Learn about The Table',
                   buttonLink: '#'
                 },
                 {
-                  buttonText: 'Share your faith story in a meaningful conversation',
+                  buttonText: 'Share your faith story',
                   buttonLink: '#'
                 },
                 {
-                  buttonText: 'Use the "Opportunity Finder" to serve at CF',
+                  buttonText: 'Use Opportunity Finder',
                   buttonLink: '#'
                 }
               ]
             }
           },
           {
-            buttonText: 'I want to worship God with others',
+            buttonText: 'Worship in a Gathering',
             linkPanel : {
-              title: 'Explore the practice of worshipping in a gathering',
+              title: 'How can I worship with others?',
               links: [
                 {
                   buttonText: 'Attend weekly worship services',
                   buttonLink: '#'
                 },
                 {
-                  buttonText: 'Explore the meaning of the Lord\'s Supper',
+                  buttonText: 'Learn about the Lord\'s Supper',
                   buttonLink: '#'
                 },
                 {
-                  buttonText: 'Find out about getting baptized',
+                  buttonText: 'Get baptized',
                   buttonLink: '#'
                 }
               ]
@@ -106,7 +106,7 @@
       image: '/images/growing.jpg',
       persona: {
         name: 'Jennifer',
-        picture: '/images/growing.jpg',
+        picture: '/images/jennifer.png',
         title: 'Where are the next steps in my relationship with God?',
         description:'Jennifer has been attending worship services a few times a month now, but she wants something more. She is looking for authentic community where she can grow alongside other believers. She met a few people when she volunteered during server Day, but is hoping to build deeper connections within her church family. Jennifer is also excited to learn more about God and his Word with others. If she understands the Bible more, she can feel more confident having meaningful conversations about her faith with others.'
       },
@@ -209,10 +209,6 @@
               ]
             }
           }
-
-
-
-
         ]
       }
     },
@@ -220,8 +216,8 @@
       text: 'Restoring',
       image: '/images/restoring.jpg',
       persona: {
-        name: 'Eric',
-        picture: '/images/exploring.jpg',
+        name: 'Erica',
+        picture: '/images/erica.png',
         title: 'Where are the next steps in my relationship with God?',
         description:'Jennifer has been attending worship services a few times a month now, but she wants something more. She is looking for authentic community where she can grow alongside other believers. She met a few people when she volunteered during server Day, but is hoping to build deeper connections within her church family. Jennifer is also excited to learn more about God and his Word with others. If she understands the Bible more, she can feel more confident having meaningful conversations about her faith with others.'
       },
@@ -234,7 +230,7 @@
       image: '/images/maturing.jpg',
       persona: {
         name: 'Will',
-        picture: '/images/exploring.jpg',
+        picture: '/images/will.png',
         title: 'Where are the next steps in my relationship with God?',
         description:'Jennifer has been attending worship services a few times a month now, but she wants something more. She is looking for authentic community where she can grow alongside other believers. She met a few people when she volunteered during server Day, but is hoping to build deeper connections within her church family. Jennifer is also excited to learn more about God and his Word with others. If she understands the Bible more, she can feel more confident having meaningful conversations about her faith with others.'
       },

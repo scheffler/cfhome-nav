@@ -20,7 +20,7 @@ const ButtonGroup = ({buttonText, buttonLink}) => {
 
   return (
     <div className={'inner-item'}>
-      <a className={'btn-link'} href={buttonLink} >{buttonText}</a>
+      <button className={'btn btn-choice'}  >{buttonText}</button>
     </div>
   )
 }

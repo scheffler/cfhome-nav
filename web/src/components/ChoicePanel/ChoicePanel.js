@@ -9,16 +9,18 @@ const ChoicePanel = ({title,choices,select, selected, persona, showLinkPanel}) =
   return (
     <>
       <div className={'panel flex-panel choice-panel'}>
-        <div className={'header-text'}>{title}</div>
         <div className={'choice-body'}>
           <Persona {...persona} />
-          <div>
-            <div className={'choice-button-list'}>
-              {
-                choices.map((ele, idx)=> {
-                  return <ChoiceButton key={idx} {...ele} select={select} selected={selected.buttonText} />
-                })
-              }
+          <div className={'choice-detail'}>
+            <div>
+              <div className={'header-text choice-header'}>{title}</div>
+              <div className={'choice-button-list'}>
+                {
+                  choices.map((ele, idx)=> {
+                    return <ChoiceButton key={idx} {...ele} select={select} selected={selected.buttonText} />
+                  })
+                }
+              </div>
             </div>
             <LinkPanel title={linkPanel.title} links={linkPanel.links} />
           </div>
@@ -33,7 +35,7 @@ const ChoiceButton = ({buttonText, select, selected}) => {
 
   return (
     <div className={'inner-item'}>
-      <button className={`btn ${selClass}`} onClick={()=> select(buttonText)}  >{buttonText}</button>
+      <button className={`btn btn-choice ${selClass}`} onClick={()=> select(buttonText)}  >{buttonText}</button>
     </div>
   )
 };
