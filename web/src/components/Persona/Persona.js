@@ -1,5 +1,4 @@
 
-
 const Persona = ({name,picture,title,description}) => {
 
   return (
